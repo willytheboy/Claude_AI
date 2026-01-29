@@ -1,0 +1,11 @@
+export { AdminDashboard } from './AdminDashboard';
+export { OverviewTab } from './OverviewTab';
+export { AITrainingTab } from './AITrainingTab';
+export { KnowledgeTab } from './KnowledgeTab';
+export { CustomersTab } from './CustomersTab';
+export { ConversationsTab } from './ConversationsTab';
+export { ImagesTab } from './ImagesTab';
+export { SocialLinksTab } from './SocialLinksTab';
+export { QuickActionsTab } from './QuickActionsTab';
+export { AnalyticsTab } from './AnalyticsTab';
+export { SettingsTab } from './SettingsTab';
