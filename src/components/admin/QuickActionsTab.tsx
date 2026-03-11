@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Plus, Trash2, GripVertical, MessageSquare, ExternalLink, Phone, Mail } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { cn } from '../../lib/utils';
@@ -14,7 +14,7 @@ const ACTION_TYPES = [
 export function QuickActionsTab() {
   const [actions, setActions] = useState<QuickAction[]>([]);
   const [isLoading, setIsLoading] = useState(true);
-  const [newAction, setNewAction] = useState({ label: '', action_type: 'message' as const, action_data: '', icon: 'message' });
+  const [newAction, setNewAction] = useState<{ label: string; action_type: 'message' | 'link' | 'phone' | 'email'; action_data: string; icon: string }>({ label: '', action_type: 'message', action_data: '', icon: 'message' });
 
   useEffect(() => {
     loadActions();

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Plus, Trash2, Edit2, Save, X, Image as ImageIcon, Tag } from 'lucide-react';
+import { Plus, Trash2, Edit2, Save, X, Image as ImageIcon } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { cn } from '../../lib/utils';
 import type { ClubImage } from '../../types';

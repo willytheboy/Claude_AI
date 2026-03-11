@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ChatContainer } from '../components/chat';
 
 export function Index() {

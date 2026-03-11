@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Search, MessageSquare, User, Calendar, ChevronRight, ThumbsUp, ThumbsDown } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { cn, formatDate, formatRelativeTime } from '../../lib/utils';

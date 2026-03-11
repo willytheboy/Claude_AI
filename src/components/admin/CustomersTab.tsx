@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Search, User, Mail, Phone, Star, Calendar, Edit2, Save, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Search, User, Mail, Phone,  Calendar, Edit2, Save, X } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { cn, formatDate } from '../../lib/utils';
 import type { Customer } from '../../types';

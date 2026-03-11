@@ -1,5 +1,5 @@
 import { useState, useCallback, useRef } from 'react';
-import { supabase } from '../lib/supabase';
+// import { supabase } from '../lib/supabase';
 import type { ChatResponse, RichContent } from '../types';
 
 interface StreamingState {

@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Plus, Save, Trash2, Edit2, X, Check, GripVertical } from 'lucide-react';
+import { useEffect, useState } from 'react';
+import { Plus, Trash2, Edit2, X, Check } from 'lucide-react';
 import { supabase } from '../../lib/supabase';
 import { cn } from '../../lib/utils';
 import type { AdminInstruction, QAOverride } from '../../types';
@@ -9,7 +9,6 @@ export function AITrainingTab() {
   const [qaOverrides, setQaOverrides] = useState<QAOverride[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [editingInstruction, setEditingInstruction] = useState<string | null>(null);
-  const [editingQA, setEditingQA] = useState<string | null>(null);
   const [newInstruction, setNewInstruction] = useState('');
   const [newQA, setNewQA] = useState({ question: '', answer: '', keywords: '' });
 

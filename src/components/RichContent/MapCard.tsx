@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { MapPin, Navigation, ExternalLink } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
@@ -12,12 +12,8 @@ interface MapCardProps {
   className?: string;
 }
 
-export function MapCard({ address, coordinates, zoom = 15, className }: MapCardProps) {
+export function MapCard({ address, coordinates, zoom: _zoom = 15, className }: MapCardProps) {
   const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${coordinates.lat},${coordinates.lng}`;
-  const embedUrl = `https://www.google.com/maps/embed/v1/place?key=YOUR_API_KEY&q=${encodeURIComponent(address)}&zoom=${zoom}`;
-
-  // Static map image as fallback
-  const staticMapUrl = `https://maps.googleapis.com/maps/api/staticmap?center=${coordinates.lat},${coordinates.lng}&zoom=${zoom}&size=400x200&maptype=roadmap&markers=color:red%7C${coordinates.lat},${coordinates.lng}`;
 
   const handleGetDirections = () => {
     const directionsUrl = `https://www.google.com/maps/dir/?api=1&destination=${coordinates.lat},${coordinates.lng}`;

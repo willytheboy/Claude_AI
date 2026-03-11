@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { ThumbsUp, ThumbsDown } from 'lucide-react';
 import { cn } from '../../lib/utils';
 
@@ -10,7 +10,7 @@ interface FeedbackButtonsProps {
 }
 
 export function FeedbackButtons({
-  messageId,
+  messageId: _messageId,
   initialRating,
   onRate,
   className,

@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { cn, formatRelativeTime } from '../../lib/utils';
 import { FeedbackButtons } from './FeedbackButtons';
 import { SocialMediaCard } from '../RichContent/SocialMediaCard';
